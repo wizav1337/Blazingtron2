@@ -1,0 +1,19 @@
+# Build outputs
+Blazingtron2.exe
+*.obj
+*.o
+*.res
+*.pdb
+*.ilk
+
+# IDE / editor
+.vs/
+.vscode/
+*.user
+*.suo
+*.sln
+*.vcxproj*
+
+# Misc
+Thumbs.db
+Desktop.ini

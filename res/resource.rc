@@ -1,0 +1,42 @@
+// resource.rc - Blazingtron 2
+// Compile with windres (MinGW) or rc.exe (MSVC)
+
+#include <windows.h>
+
+// Icon - convert blazing.png to blazing.ico (use ImageMagick, GIMP, or online converter)
+// Then uncomment the next line and place .ico in assets/
+// 1 ICON "assets\\blazing.ico"
+
+// Version info (optional)
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0x0L
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "BlazingBoost"
+            VALUE "FileDescription", "Blazingtron 2 - VIP Service Calculator (Win32 + Assembly)"
+            VALUE "FileVersion", "2.0.0.0"
+            VALUE "InternalName", "Blazingtron2"
+            VALUE "LegalCopyright", "Copyright (c) 2026"
+            VALUE "OriginalFilename", "Blazingtron2.exe"
+            VALUE "ProductName", "Blazingtron 2"
+            VALUE "ProductVersion", "2.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+// Manifest for Common Controls v6 + DPI awareness (modern Win11 look)
+// Commented because it was causing windres issues in this build; the app is fully functional without it.
+// 1 24 "res\\blazingtron.manifest"

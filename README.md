@@ -104,6 +104,16 @@ Blazingtron 2:
 - No floating toolbar or advanced features were added — faithful functional rebuild + native speed.
 - For money values, production use should consider integer cents to avoid any floating-point rounding. Current version matches original float behavior.
 
+## Downloads (Pre-built Binaries)
+
+Pre-compiled portable version (no installation required):
+
+- **Windows 11 x64 Portable**: [Blazingtron2-v2.0-Portable.zip](https://github.com/wizav1337/Blazingtron2/releases/download/v2.0/Blazingtron2-v2.0-Portable.zip)
+  - Contains `Blazingtron2.exe` + the two required runtime DLLs
+  - Just extract and run
+
+Source code and build scripts are in this repository.
+
 ## License
 
 Same as original (see original repo).
